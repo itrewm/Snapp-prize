@@ -1,7 +1,5 @@
 import requests
-import pickle
 from errors.http_error import VoucherExceededException, PhoneInvalidException
-import functools
 
 
 class SnappTaxi:
