@@ -12,12 +12,6 @@ To deploy this project run
   python gui.py
 ```
 
-for normal people :
-
-```python
-  Run gui.exe
-```
-
 ## Authors
 
 - [@itrewm](https://github.com/itrewm)
