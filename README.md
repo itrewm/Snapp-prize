@@ -21,4 +21,4 @@ To deploy this project run
 ## 🔗 Links
 [![instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/itrewm)
 
-[![telegram](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/rewwm)
+[![telegram](https://img.shields.io/badge/telegram-0A66C2?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/rewwm)
