@@ -2,7 +2,8 @@
 
 By using this project, you can automatically convert all your points into lottery tickets or other prizes offered by Snapp company.
 
-
+## Demo
+https://www.instagram.com/p/CtmelffRAHX/
 
 ## Deployment
 
