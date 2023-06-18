@@ -9,6 +9,11 @@ https://www.instagram.com/p/CtmelffRAHX/
 
 To deploy this project run
 
+
+```bash
+  pip install requests
+```
+
 ```bash
   python gui.py
 ```
