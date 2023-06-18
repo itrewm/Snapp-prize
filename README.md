@@ -5,14 +5,20 @@ By using this project, you can automatically convert all your points into lotter
 ## Demo
 https://www.instagram.com/p/CtmelffRAHX/
 
+
+## requirments
+
+```bash
+  pip install requests
+```
+
+
 ## Deployment
 
 To deploy this project run
 
 
-```bash
-  pip install requests
-```
+
 
 ```bash
   python gui.py
