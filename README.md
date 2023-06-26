@@ -10,6 +10,7 @@ https://www.instagram.com/p/CtmelffRAHX/
 
 ```bash
   pip install requests
+  pip install customtkinter
 ```
 
 
