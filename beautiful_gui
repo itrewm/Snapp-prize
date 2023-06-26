@@ -1,0 +1,89 @@
+from customtkinter import *
+
+def login_page():
+
+    def sendcode_btn():
+        # After checking and performing the necessary operations on the mobile number, you can change the status like this
+        status_lb.configure(text='Send', text_color='green')
+    
+    def accept_verify_code():
+        # This is like sendcode_btn function
+        pass
+
+    login_root = CTk()
+    login_root.title('Snapp-prize')
+    login_root.geometry('300x300')
+    login_root.resizable(width=False, height=False)
+
+    # Phone number panel
+
+    frame_login_ph = CTkFrame(login_root)
+    frame_login_ph.pack(padx=14,pady=12)
+
+    phonenumber_lb = CTkLabel(frame_login_ph, text='Your Phone Number', font=('Roboto', 13))
+    phonenumber_lb.pack(padx=12)
+
+    phone_number = CTkEntry(frame_login_ph, placeholder_text='0919*******', font=('Roboto', 13))
+    phone_number.pack(padx=12,pady=5)
+
+    ac_phonenumber_btn = CTkButton(frame_login_ph, text='Send Code', font=('Roboto', 13), command=sendcode_btn)
+    ac_phonenumber_btn.pack(padx=12,pady=5)
+
+    # Code verify panel
+
+    frame_login_co = CTkFrame(login_root)
+    frame_login_co.pack(padx=14,pady=12)
+
+    code_lb = CTkLabel(frame_login_co, text='Verify Code', font=('Roboto', 13))
+    code_lb.pack(padx=12)
+
+    OTP_code = CTkEntry(frame_login_co, font=('Roboto', 13))
+    OTP_code.pack(padx=12,pady=5)
+
+    ac_code_btn = CTkButton(frame_login_co, text='Accept', font=('Roboto', 13), command=accept_verify_code)
+    ac_code_btn.pack(padx=12,pady=5)
+
+    # Status Label
+
+    status_lb = CTkLabel(login_root, text='Status', text_color='blue', font=('bold', 15))
+    status_lb.pack(padx=12, pady=5)
+
+    login_root.mainloop()
+
+
+def main_page():
+    def redeem_fun():
+        status_lb.configure(text='OK', text_color='green')
+
+    main_root = CTk()
+    main_root.title('Snapp-prize')
+    main_root.geometry('300x300')
+    main_root.resizable(width=False, height=False)
+
+    main_frame = CTkFrame(main_root)
+    main_frame.pack(padx=14,pady=12)
+
+    prize_lb = CTkLabel(main_frame, text='prize text', font=('Roboto', 13))
+    prize_lb.pack(padx=12,pady=5)
+
+    prize_ent = CTkEntry(main_frame, font=('Roboto', 13))
+    prize_ent.pack(padx=12,pady=5)
+
+    voucher_cunt_lb = CTkLabel(main_frame, text='Voucher cunt', font=('Roboto', 13))
+    voucher_cunt_lb.pack(padx=12,pady=5)
+
+    voucher_cunt_ent = CTkEntry(main_frame, font=('Roboto', 13))
+    voucher_cunt_ent.pack(padx=12,pady=5)
+
+    redeem_btn = CTkButton(main_frame, text='Redeem', font=('Roboto', 13), command=redeem_fun)
+    redeem_btn.pack(padx=12,pady=5)
+
+    # Status Label
+
+    status_lb = CTkLabel(main_root, text='Status', text_color='blue', font=('bold', 15))
+    status_lb.pack(padx=12, pady=5)
+
+    main_root.mainloop()
+
+
+main_page()
